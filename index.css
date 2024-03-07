@@ -1,0 +1,431 @@
+.navbar {
+  background-color: #191a2b;
+  z-index: 10;
+}
+.nav-item {
+  font-family: "Hind Vadodara", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 15px;
+  margin-right: 10px;
+  color: #331b3b;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #5fdba1 !important;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 0px;
+  transition: color 0.5;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 8px;
+  background-color: #00ff37;
+  transition: width 0.5s;
+}
+
+.nav-link.active::after {
+  text-decoration: line-through;
+  width: 30%;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+.navbar-brand {
+  color: #5fdba1 !important;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  padding-right: 80px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  font-size: 24px bold;
+}
+/*market plan*/
+.market-plan {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+/* Hero-service*/
+.carousel-item {
+  height: 50rem;
+  background: #000 !important;
+  opacity: 50%;
+  color: #5fdba1;
+  position: relative;
+}
+.carousel-caption .btn {
+  color: #72e2ae;
+  background-color: transparent;
+  border-color: #72e2ae;
+  border-radius: 5px;
+  text-align: center;
+}
+.carousel-caption .btn:hover {
+  color: #00ff37;
+  background-color: transparent;
+  border-color: #72e2ae;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.carousel-caption {
+  color: #5fdba1 !important;
+  position: relative;
+  bottom: 5rem !important;
+  width: 500px;
+  text-align: left !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding-bottom: 50px;
+}
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.carousel-indicators > .btn {
+  background-color: rgba(0, 230, 173, 0.41);
+}
+
+.carousel-indicators > .btn.active {
+  background-color: rgba(0, 230, 173, 1);
+}
+
+/*market Plan */
+.service-container {
+  min-height: 48rem;
+  width: 100%;
+  background-color: #191a2b;
+}
+.service-wrapper {
+  padding: 5% 8%;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service h1 {
+  color: #5fdba1;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: transparent;
+  letter-spacing: 4px;
+  background-color: rgb(4, 52, 83);
+  background: linear-gradient(
+    8deg,
+    rgba(8, 52, 83, 1) 0%,
+    rgba(0, 230, 173, 1) 41%,
+    rgba(41, 17, 45, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.service h1:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  height: 8px;
+  width: 80%;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.service h1 span {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #5fdba1;
+  animation: anim 5s linear infinite;
+}
+@keyframes anim {
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 88%;
+  }
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 80px;
+}
+.card {
+  height: 330px;
+  width: 370px;
+  background-color: #1c2335 !important;
+  padding: 3% 8%;
+  border: 0.2px solid rgba(114, 226, 174, 0.2);
+  border-radius: 8px;
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.card:after {
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: -200px;
+  width: 120%;
+  transform: rotate(50deg);
+  background-color: #fff;
+  height: 18px;
+  filter: blur(60px);
+  opacity: 0.5;
+  transition: 1s;
+}
+.card:hover:after {
+  width: 225%;
+  top: -100%;
+}
+.card i {
+  color: #72e2ae;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 4.8rem;
+}
+.card h2 {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card p {
+  text-align: center;
+  width: 100%;
+  margin: 12px 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.card:hover {
+  background-color: transparent;
+  transform: translateY(-8px);
+  border-color: #00ff37;
+}
+.card:hover i {
+  color: #00ff37;
+}
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/*selling procedure*/
+
+.seller-card {
+  margin: 1rem !important;
+  border-radius: 8% !important;
+}
+.card-footer {
+  color: #fff;
+}
+/*buyer*/
+.buyer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+buyer h1 {
+  color: linear-gradient(
+    8deg,
+    rgba(8, 52, 83, 1) 0%,
+    rgba(0, 230, 173, 1) 41%,
+    rgba(41, 17, 45, 1) 100%
+  );
+}
+/*form*/
+.form-popup {
+  display: none;
+  position: absolute;
+
+  top: 20%;
+  right: 50px; /* Adjust this value to your preference */
+  transform: translateY(-50%);
+
+  padding: 40px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  .form-popup {
+    right: 10px; /* Adjust this value for smaller screens */
+    padding: 20px;
+  }
+}
+
+.form-popup.show {
+  display: block;
+}
+
+.form-wrapper {
+  width: 400px;
+  height: 30rem;
+  display: flex;
+  position: absolute;
+  right: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #191a2b;
+  border-radius: 15px;
+}
+.form-wrapper h3 {
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+form input {
+  display: flex;
+  width: 250px;
+  height: 25px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+form textarea {
+  width: 250px;
+  padding: 10px;
+  font-size: 20px;
+}
+.form-close i {
+  color: #f73d3d;
+  width: 28px;
+  position: absolute;
+  top: 5px;
+
+  right: 5px;
+}
+.form-button {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.form-button .btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #5fdba1;
+}
+
+/* partners */
+#partners {
+  padding: 20px;
+}
+
+#partners h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+#partners ul {
+  margin: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#partners ul li {
+  margin: 0 10px 20px;
+}
+
+#partners ul li img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* footer */
+#contact {
+  background-image: linear-gradient(
+    8deg,
+    rgba(8, 52, 83, 1) 0%,
+    rgb(13, 12, 57) 41%,
+    rgba(41, 17, 45, 1) 100%
+  );
+  padding-bottom: 40px;
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+
+  min-height: 100px;
+  padding: 20px 50px;
+  justify-content: center;
+  align-items: center;
+}
+footer .social_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+footer .social_icon a {
+  list-style: none;
+}
+footer .social_icon a i {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social_icon a i:hover {
+  transform: translateY(-10px);
+}
+footer .brand {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer .address {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer .contact {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
